@@ -1,0 +1,2 @@
+rootProject.name = "Salient Android Test"
+include ':app'

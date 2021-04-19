@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Salient Intel Assets</string>
+    <string name="fragment_user_details_btn_post_label">View Job History</string>
+    <string name="fragment_user_details_title">Asset Details</string>
+    <string name="item_user_username_label">Codename:</string>
+    <string name="item_user_email_label">Email:</string>
+</resources>

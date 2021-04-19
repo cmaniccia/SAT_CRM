@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_details_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.post.PostDetailsFragment">
+
+    <ProgressBar
+        android:id="@+id/fragment_post_details_progressBar"
+        android:layout_width="29dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/fragment_post_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Job title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/fragment_post_details_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="6dp"
+        android:text="Job Description"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_post_details_title"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_post_details_title" />
+
+    <Button
+        android:id="@+id/fragment_post_details_deletePostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_post_details_body"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_post_details_body"
+        android:text="Delete Job" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

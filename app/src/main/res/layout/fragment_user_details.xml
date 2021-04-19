@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_details_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.userdetails.UserDetailsFragment">
+
+    <ProgressBar
+        android:id="@+id/fragment_user_details_progressBar"
+        android:layout_width="29dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/fragment_user_details_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_user_details_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility = "gone"/>
+
+
+    <TextView
+        android:id="@+id/fragment_user_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        android:textStyle="bold"
+        android:text="Full Name"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_user_details_title" />
+
+    <TextView
+        android:id="@+id/fragment_user_details_username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Codename:"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_user_details_name"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_user_details_name" />
+
+
+    <TextView
+        android:id="@+id/fragment_user_details_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        android:text="TextView"
+        app:layout_constraintLeft_toRightOf="@+id/fragment_user_details_username_label"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_user_details_name" />
+
+    <TextView
+        android:id="@+id/fragment_user_details_email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Email:"
+        app:layout_constraintStart_toStartOf="@+id/fragment_user_details_username_label"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_user_details_username_label" />
+
+
+    <TextView
+        android:id="@+id/fragment_user_details_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        android:text="TextView"
+        app:layout_constraintLeft_toRightOf="@+id/fragment_user_details_email_label"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_user_details_username_label" />
+
+    <TextView
+        android:id="@+id/fragment_user_details_website_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Website:"
+        app:layout_constraintStart_toStartOf="@+id/fragment_user_details_email_label"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_user_details_email_label" />
+
+
+
+    <TextView
+        android:id="@+id/fragment_user_details_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        android:text="TextView"
+        app:layout_constraintLeft_toRightOf="@+id/fragment_user_details_website_label"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_user_details_email" />
+
+    <TextView
+        android:id="@+id/fragment_user_details_phone_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Phone:"
+        app:layout_constraintStart_toStartOf="@+id/fragment_user_details_website_label"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_user_details_website_label" />
+
+
+    <TextView
+        android:id="@+id/fragment_user_details_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        android:text="TextView"
+        app:layout_constraintLeft_toRightOf="@+id/fragment_user_details_phone_label"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_user_details_website_label" />
+
+
+
+    <Button
+        android:id="@+id/fragment_user_details_viewPostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_user_details_phone_label"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_user_details_phone_label"
+        android:text="@string/fragment_user_details_btn_post_label" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
